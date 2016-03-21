@@ -1,0 +1,411 @@
+/*Navigation Bar*/
+.fa, th{
+    cursor:pointer;
+}
+.navbar{
+    color:navajowhite;
+    font-size:20px;
+    font-weight:bold;
+    font-family: 'Architects Daughter', cursive;;
+}
+
+/*Sidebar for owner pages*/
+#sidebar-wrapper{
+    color:navajowhite;
+    font-size:15px;
+    padding: 5px;
+    font-family:'Dancing Script', cursive ;
+}
+
+/*form fields*/
+#forms{
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.header{
+    padding-top:30px;
+    font-family: 'Dancing Script', cursive;
+    color:navajowhite;
+    padding-left:80px;
+    font-size:20px;
+    font-weight: bold;
+}
+.transbox{
+    background-color: rgba(0,0,0,0.5);
+    border: 1px;
+    border-radius:10px 10px 10px 10px;
+}
+
+.contact{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:500px;
+    height:300px;
+    font-family: 'Architects Daughter', cursive;
+    color:navajowhite;
+    margin:0px;
+    padding-left: 100px;
+}
+
+#home{
+    margin: 5%;
+    color: #000000;
+}
+
+/* ---------- LOGIN-FORM ---------- */
+#login-form {
+    width: 300px;
+    border-color: #262626;
+    box-shadow: #262626;
+}
+
+#login-form h3 {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: #222222;
+    font-family: 'Shadows Into Light', cursive;
+    border-style: groove;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+#login-form input {
+    font-size: 14px;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+    border-style: inset;
+    padding: 12px 10px;
+    border-color: #262626;
+    width: 100%;
+    box-shadow: 0 0 10px grey;
+    border-radius: 10px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius: 10px;
+}
+
+
+.nav a {
+    color: white;
+    font-size:11px;
+    font-weight: bold;
+    padding-top:14px;
+    padding-bottom:14px;
+    padding-left:10px;
+    padding-right:10px;
+    text-transform: uppercase;
+}
+
+/*Additional links index page*/
+.learn-more {
+    background-color: #c1e2b3;
+    opacity:0.5;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+
+}
+.learn-more h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+
+}
+.learn-more a {
+    color: royalblue;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;;
+}
+.nav li{
+    display:inline;
+}
+
+
+/*Host Home Page*/
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.centered h2 {
+    color: palegreen;
+    font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+    /*font-weight: bold;*/
+}
+
+.centered p{
+    font-size: 50px;
+    color: lightyellow;
+    font-family: 'Pacifico', cursive;
+}
+/*for image background and footer*/
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+    color:navajowhite;
+}
+.wrapper {
+    min-height: 100%;
+    height: 100%;
+    margin: 0;
+    background: url("http://ericrussellphotography.com/wp-content/uploads/2014/06/pallet-bistro-evening-table.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: repeat;
+
+}
+.footer, .push {
+    height: 4em;
+}
+
+
+a:hover {
+    color: #1dabb8;
+}
+
+fieldset {
+    border: thick ;
+    margin: 0;
+}
+
+input {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 15px;
+    margin: 0;
+    -webkit-appearance: none;
+    border-style: inset;
+    border-color: #262626;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+
+
+
+
+/* Toggle Styles */
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    padding-left: 40px;
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*alignment of form fields*/
+.table>tbody>tr>td, .table>thead>tr>th {
+    vertical-align: middle;
+
+}
+/*
+.table-striped>tbody>tr:nth-child(odd)>td {
+    background-color: #E7F0F5;
+}*/
+.table-condensed>tbody>tr>td {
+    padding: 2px 4px;
+}
+section {
+    margin: 30px 0;
+}
+.container {
+    font-size: 0.9em;
+
+}
+
+ul.nav-tabs a span.tab-text {
+    display: none;
+}
+ul.nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+}
+ul.nav-tabs.nav-justified>li>a {
+    margin-bottom: 0px;
+    border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs.nav-justified>.active>a, ul.nav-tabs.nav-justified>.active>a:hover {
+    border-color: #FFF;
+}
+.tab-pane h6 {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #418AB4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#seating{
+    padding-left: 4px;
+    padding-right: 4px;
+    width: auto;
+}
+
+#profile {
+    padding-left: 4px;
+    padding-right: 4px;
+    width: auto;
+
+}
+
+#page-content-wrapper{
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#FFDEAD;
+}
+
+.set{
+    position: absolute;
+    padding-top: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: navajowhite
+}
+
+.set, label,h5{
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:navajowhite;
+}
+
+.wrapper , th,td{
+    color: papayawhip;
+}

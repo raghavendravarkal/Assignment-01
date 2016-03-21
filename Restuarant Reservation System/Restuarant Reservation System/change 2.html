@@ -1,0 +1,67 @@
+<div ng-controller="formController">
+
+<div class="header">
+            <h1>Change Your Reservation</h1>
+        </div>
+        <div class="set">
+            <div class="container transbox" id="home">
+                <h5>Your Current Reservation...</h5>
+
+                    <div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+
+                                <th>Party Size</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>{{guest.partysize}}</td>
+                                <td>{{guest.date}}</td>
+                                <td>{{guest.time}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                       </div>
+
+                <form name="updateGuestForm" data-ng-submit="editReservation()">
+                    <div class="form-group">
+                        <label for="date">I need a table On</label>
+                        <span><i class="glyphicon glyphicon-calendar"></i></span>
+                        <input type="date" name="date" ng-model="updateGuest.date" class="form-control" id="date">
+                            <div data-ng-messages="updateGuestForm.date.$error" class="error" ng-if="updateGuestForm.date.$dirty">
+                                <p data-ng-message="required">Required</p>
+                                </div>
+                            </div>
+
+
+                <div class="form-group">
+                    <label for="time">At</label>
+                    <span><i class="fa fa-clock-o"></i></span>
+                    <input type="time" id="time" name="time" ng-model="updateGuest.time" required class="form-control">
+                    <div data-ng-messages="updateGuestForm.time.$error" class="error" ng-if="updateGuestForm.time.$dirty">
+                        <p data-ng-message="required">Required</p>
+                    </div>
+                </div>
+
+                    <div class="form-group">
+                        <label for="partysize">Party Size</label>
+                        <span><i class="fa fa-clock-o"></i></span>
+                        <input type="number" id="partysize" name="time" ng-model="updateGuest.partysize" required class="form-control">
+                        <div data-ng-messages="updateGuestForm.partysize.$error" class="error" ng-if="updateGuestForm.partysize.$dirty">
+                            <p data-ng-message="required">Required</p>
+                        </div>
+                    </div>
+                <div>
+
+                    <button type="submit" class="btn btn-default">Confirm Changes!</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+

@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <div class="header">
+        <h1>Change Your Reservation</h1>
+    </div>
+    <div class="set">
+        <div class="container transbox" id="home">
+            <h5><strong>Dear guest, Please Enter your Confirmation details.</strong></h5>
+
+            <form name="GuestForm" data-ng-submit="editReservation()">
+                <div class="form-group">
+                    <label for="cnf">Confirmation Number</label>
+                    <input type="number" name="date" ng-model="Guest.id" class="form-control" id="cnf">
+
+                    <div data-ng-messages="Form.date.$error" class="error" ng-if="GuestForm.date.$dirty">
+                        <p data-ng-message="required">Required</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="email" ng-model="Guest.email" required class="form-control">
+
+                    <div data-ng-messages="Guest.email.$error" class="error" ng-if="GuestForm.email.$dirty">
+                        <p data-ng-message="required">Required</p>
+
+                        <p data-ng-message="email">Email is invalid</p>
+                    </div>
+                </div>
+                <div>
+
+                    <button type="submit" class="btn btn-default">Continue</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

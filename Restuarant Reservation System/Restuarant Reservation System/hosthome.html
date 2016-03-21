@@ -1,0 +1,29 @@
+<div class="wrapper">
+<div ng-controller="formController">
+<div class="centered">
+        <div class="transbox"id="forms">
+        <form role="form" name="res-form" method = "post" id="login-form">
+            <h3>Login</h3>
+
+                <span><i class="fa fa-user"></i></span>
+                <label for="username"></label>
+                <input type="text" id="username" placeholder="Username" data-ng-model="form.Username">
+
+                <span><i class="fa fa-lock"></i></span>
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password" data-ng-model="form.Password">
+
+        </form>
+            <div class="text-center">
+                <form data-ng-submit="submit()">
+                    <input type="submit" class="btn large-btn btn-primary" value="Login">
+                </form>
+                <button type="button" class="btn btn-link">Forgot Password</button>
+            </div>
+        </div>
+</div>
+</div>
+</div>
+<!--<div class="alert alert-danger" role="alert" data-ng-hide="true">-->
+    <!--<p class="alert-link">Authentication failed! Please re-enter your credentials.</p>-->
+<!--</div>-->

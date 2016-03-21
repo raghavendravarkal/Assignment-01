@@ -1,0 +1,62 @@
+<div id="wrapper" ng-controller="formController">
+<div class="wrapper">
+<div class="col-md-6">
+    <div ng-include="'sidebar.html'"></div>
+</div>
+
+<div id="page-content-wrapper">
+    <div class="container">
+        <div class="col-lg-8">
+
+<form data-ng-submit="update()">
+    <h3> Edit Profile</h3>
+        <div>
+            <label for="name"> NAME </label>
+            <input type="text" id=name class="form-control" data-ng-model="n.rName" >
+        </div>
+
+        <div>
+            <label for="phone"> PHONE </label>
+            <input type="text" id=phone class="form-control" data-ng-model="n.rPhone">
+        </div>
+
+        <div>
+            <label for="location"> LOCATION: </label>
+            <input type="text" id=location class="form-control" data-ng-model="n.rAddress">
+        </div>
+
+    <br>
+        <div>
+            <label for="option1">Table Auto Assign</label>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="on" checked> ON
+                </label>
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Off
+                </label>
+            </div>
+        </div>
+        <div>
+            <label for="username"> Username </label>
+            <input type="text" id=username class="form-control" data-ng-model="n.rUsername">
+        </div>
+        <div>
+            <label for="password"> Password </label>
+            <input type="password" id=password class="form-control" data-ng-model="n.rPassword">
+        </div>
+
+     <br>
+
+        <div ng-class="">
+            <button type="submit"  class="btn btn-default">Confirm Changes</button>
+        </div>
+        </form>
+
+
+        </div>
+    </div>
+
+</div>
+    </div>
+</div>
